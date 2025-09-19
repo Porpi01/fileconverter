@@ -46,21 +46,39 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-		<dependency>
+		<!-- Apache POI para manipular DOCX -->
+<dependency>
     <groupId>org.apache.poi</groupId>
     <artifactId>poi-ooxml</artifactId>
     <version>5.4.1</version>
 </dependency>
+
+<!-- docx4j núcleo -->
 <dependency>
-    <groupId>org.apache.poi</groupId>
-    <artifactId>poi</artifactId>
-    <version>5.4.1</version>
+    <groupId>org.docx4j</groupId>
+    <artifactId>docx4j-core</artifactId>
+    <version>11.4.9</version>
 </dependency>
 <dependency>
-    <groupId>org.apache.poi</groupId>
-    <artifactId>poi-ooxml-schemas</artifactId>
-    <version>4.1.2</version>
+    <groupId>org.docx4j</groupId>
+    <artifactId>docx4j-JAXB-ReferenceImpl</artifactId>
+    <version>11.4.9</version>
 </dependency>
+
+<!-- Exportar a PDF vía Apache FOP -->
+<dependency>
+    <groupId>org.docx4j</groupId>
+    <artifactId>docx4j-export-fo</artifactId>
+    <version>11.4.9</version>
+</dependency>
+
+<!-- Apache FOP (motor FO para PDF) -->
+<dependency>
+    <groupId>org.apache.xmlgraphics</groupId>
+    <artifactId>fop</artifactId>
+    <version>2.9</version>
+</dependency>
+
 
 	</dependencies>
 
